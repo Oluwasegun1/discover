@@ -93,9 +93,9 @@ export default function Hero() {
           <mask id="containerMask">
             <path
               d="M0 100 
-                 Q 720 150, 1440 100 
+                 Q 720 200, 1440 100 
                  L 1440 500 
-                 Q 720 450, 0 500 
+                 Q 720 400, 0 500 
                  Z"
               fill="white"
             />
@@ -105,7 +105,7 @@ export default function Hero() {
       <div className="relative w-full flex justify-center items-center px-4">
         <div
           ref={containerRef}
-          className="relative w-full max-w-[1440px] h-[600px] overflow-hidden mt-8"
+          className="relative w-screen h-[600px] overflow-hidden mt-8"
           style={{
             mask: "url(#containerMask)",
             WebkitMask: "url(#containerMask)",
@@ -116,7 +116,7 @@ export default function Hero() {
           <motion.div
             className="flex absolute left-0"
             animate={controls}
-            style={{ gap: "24px", width: "3840px" }}
+            style={{ gap: "24px", width: "5760px" }}
           >
             {[...images, ...images].map((src, index) => (
               <div
