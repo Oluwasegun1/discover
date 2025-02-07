@@ -64,11 +64,11 @@ export default function HowItWorks() {
           ].map((step, index) => (
             <div
               key={index}
-              className="flex items-center bg-white shadow-lg rounded-2xl overflow-hidden"
+              className="flex items-center bg-white shadow-lg rounded-2xl overflow-hidden pr-4"
               style={{
                 width: "593px",
                 height: "167px",
-                gap: "28px",
+                // gap: "28px",
 
                 opacity: "1",
               }}
@@ -90,7 +90,7 @@ export default function HowItWorks() {
                   className="rounded-l-2xl"
                 />
               </div>
-              <div className="p-4">
+              <div className="">
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {step.title}
                 </h3>
