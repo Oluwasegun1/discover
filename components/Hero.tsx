@@ -47,12 +47,12 @@ export default function Hero() {
         />
       </div>
       <div className="relative flex flex-col items-center justify-center text-white text-center pt-[100px] z-10">
-        <h1
-          className={`text-5xl font-medium max-w-[550px] ${getSatoshi.className}`}
-        >
+        <h1 className={`text-6xl font-medium  ${getSatoshi.className}`}>
           Explore the world,{" "}
-          <span className={getSatoshiBold.className}>one subscription</span> at
-          a time
+          <p>
+            <span className={getSatoshiBold.className}>one subscription</span>{" "}
+            at a time
+          </p>
         </h1>
       </div>
       <svg className="absolute -z-10 w-0 h-0">
