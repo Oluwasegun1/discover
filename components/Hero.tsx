@@ -55,7 +55,7 @@ export default function Hero() {
           </p>
         </h1>
       </div>
-      <svg className="absolute -z-10 w-0 h-0">
+      {/* <svg className="absolute -z-10 w-0 h-0">
         <defs>
           <mask id="containerMask">
             <path
@@ -87,7 +87,55 @@ export default function Hero() {
               />
             </div>
           ))}
-        </motion.div>
+        </motion.div> */}
+      <svg className="absolute -z-10 w-0 h-0">
+        <defs>
+          <mask id="containerMask">
+            <path
+              d="M0 100 
+                 Q 720 150, 1440 100 
+                 L 1440 500 
+                 Q 720 450, 0 500 
+                 Z"
+              fill="white"
+            />
+          </mask>
+        </defs>
+      </svg>
+      <div className="relative w-full flex justify-center items-center px-4">
+        <div
+          ref={containerRef}
+          className="relative w-full max-w-[1440px] h-[600px] overflow-hidden mt-8"
+          style={{
+            mask: "url(#containerMask)",
+            WebkitMask: "url(#containerMask)",
+            maskSize: "100% 100%",
+            WebkitMaskSize: "100% 100%",
+          }}
+        >
+          <motion.div
+            className="flex absolute left-0"
+            animate={controls}
+            style={{ gap: "24px", width: "3840px" }}
+          >
+            {[...images, ...images].map((src, index) => (
+              <div
+                key={index}
+                className="relative shrink-0 w-[360px] h-[500px]"
+                style={{ margin: "0 12px" }}
+              >
+                <Image
+                  src={src}
+                  alt={`Travel image ${index + 1}`}
+                  fill
+                  className="object-cover rounded-2xl shadow-lg"
+                  sizes="360px"
+                  priority
+                />
+              </div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </div>
   );
