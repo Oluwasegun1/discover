@@ -55,39 +55,7 @@ export default function Hero() {
           </p>
         </h1>
       </div>
-      {/* <svg className="absolute -z-10 w-0 h-0">
-        <defs>
-          <mask id="containerMask">
-            <path
-              d="M0 50 Q500 0, 1000 50 L1000 450 Q500 500, 0 450 Z"
-              fill="white"
-            />
-          </mask>
-        </defs>
-      </svg>
-      <div
-        ref={containerRef}
-        className="relative w-full h-[500px] overflow-hidden mt-40 pl-40"
-        style={{
-          mask: "url(#containerMask)",
-          WebkitMask: "url(#containerMask)",
-          maskSize: "100% 100%",
-          WebkitMaskSize: "100% 100%",
-        }}
-      >
-        <motion.div className="flex absolute w-full inset-0" animate={controls}>
-          {[...images, ...images].map((src, index) => (
-            <div key={index} className="relative shrink-0 w-[300px] h-full p-2">
-              <Image
-                src={src}
-                alt={`Travel image ${index + 1}`}
-                fill
-                className="object-cover rounded-lg shadow-lg p-4"
-                sizes="500px"
-              />
-            </div>
-          ))}
-        </motion.div> */}
+
       <svg className="absolute -z-10 w-0 h-0">
         <defs>
           <mask id="containerMask">

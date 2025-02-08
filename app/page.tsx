@@ -2,17 +2,19 @@ import React from "react";
 
 import Header from "@/components/layout/Header";
 import Hero from "@/components/Hero";
-import Product from "@/components/layout/Product";
+// import Product from "@/components/layout/Product";
 import HowItWorks from "@/components/layout/HowitWorks";
-
-// const imageSources = [firstImg, firstImg, firstImg, firstImg];
+import ScrollableSections from "@/components/layout/ScrollableSection";
+// import DiscoverYou from "@/components/layout/Discover";
+// import DiscovaFamily from "@/components/layout/DiscoverFamily";
 
 const DiscoverPage: React.FC = () => {
   return (
     <div>
       <Header />
       <Hero />
-      <Product />
+      <ScrollableSections />
+
       <HowItWorks />
     </div>
   );
